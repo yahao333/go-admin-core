@@ -23,7 +23,7 @@ func IsStringEmpty(str string) bool {
 }
 
 func GetUUID() string {
-	u := uuid.New()
+	u, _ := uuid.New()
 	return strings.ReplaceAll(u.String(), "-", "")
 }
 
